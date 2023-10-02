@@ -1,0 +1,170 @@
+
+.container-header{
+display: flex;
+align-items: center;
+justify-content: center;
+position: fixed;
+width: 100%;
+top: 20px;
+
+z-index: 999;
+}
+.header {
+    position: relative;
+    background-color: var(--background-color);
+    width: max-content;
+    border: 1px solid var(--border-color);
+    border-radius: 45px;
+    box-shadow: var(--Depth8);
+    backdrop-filter: blur(13px);
+       
+}
+
+.header img{
+    border-radius: 30px;
+    height: 38px;
+    width: 38px;
+    border: 3px solid;
+    border-color: var(--background-aboutme);
+}
+
+.header-head
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 7px;
+}
+
+.whatsapp-contact{
+  position: absolute;
+  background-color: var(--background-aboutme);
+  width: 60%;
+  left: 20%;
+  display: flex;
+  border: 0px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 0px 70px 70px;
+  cursor: pointer;
+  gap: 5px;
+  padding: 0px;
+  & p{
+    color: white;
+  }
+  & img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.OpenFormAnimate{
+    animation: OpenFormAnimate 0.3s ease 0.05s both;
+  }
+  .CloseFormAnimate{
+    animation: CloseFormAnimate 0.3s ease 0.05s both;
+  }
+
+  .CloseHeaderAnimate{
+    animation: CloseHeaderAnimate 0.3s ease 0.05s both;
+  }
+  .OpenHeaderAnimate{
+    animation: OpenHeaderAnimate 0.3s ease 0.05s both;
+  }
+
+.containerform{
+    overflow: hidden;
+    border-top: 1px solid var(--border-color);    
+}
+
+@keyframes CloseHeaderAnimate{
+    0%{
+        border-radius: 20px;
+        box-shadow: var(--Depth64);
+    }
+    100%{
+        border-radius: 45px;
+        box-shadow: var(--Depth8);
+    }
+}
+@keyframes OpenHeaderAnimate{
+    0%{
+        border-radius: 45px;
+        box-shadow: var(--Depth8);
+      
+    }
+    100%{
+        border-radius: 20px;
+        box-shadow: var(--Depth64);
+    }
+}
+
+@keyframes OpenFormAnimate {
+    0% {
+        opacity: 0;
+        width:0px;  
+        height: 0px;
+    }
+    50% {
+      width: 470px;
+      height: 0px;
+      
+    }
+    70%{}
+    100%{
+        width: 100%;
+        height: 320px;
+        opacity: 1;
+        
+        
+    }
+  }
+
+  @keyframes CloseFormAnimate {
+    0% {
+        opacity: 1;
+        width:470px;  
+        height: 320px;
+        
+    }
+    50% {
+      width: 470px;
+      height: 0px;
+    }
+    70%{}
+    100%{
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 540px)
+  {
+    .header{
+        width: 90% !important;
+    }
+    .form{
+        width: 100% !important;
+    }
+    @keyframes OpenFormAnimate {
+      0% {
+          opacity: 0;
+          width:0px;  
+          height: 0px;
+      }
+      50% {
+        width: 100%;
+        height: 0px;
+        
+      }
+      70%{}
+      100%{
+          width: 100%;
+          height: 320px;
+          opacity: 1;
+      }
+    }
+  }

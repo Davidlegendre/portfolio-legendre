@@ -1,0 +1,100 @@
+.card{
+    width: 437px;
+    background-color: var(--background-color);
+    box-shadow: var(--Depth16);
+    position: relative;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid;
+    border-color: var(--border-color);
+
+}
+.card .slider-container
+{
+    overflow: hidden;
+    margin-top: -70px;
+    border-radius: 10px;
+    height: max-content;
+    box-shadow: var(--Depth16);
+    background-color: var(--background-color);
+    margin-bottom: 20px;
+}
+
+.card .imgs-card img{
+    height: max-content;
+}
+
+.card .imgs-card a{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+.card .descript-card
+{
+display: flex;
+gap: 10px;
+flex-direction: column;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+.card .title-card{
+    font-size: 28px;
+    font-weight: lighter;
+    
+}
+
+.card .links-card
+{
+    display: flex;
+    gap: 10px;
+    & a{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        border: 0px;
+    }
+    & a:hover p{
+        color: white;
+    }
+    & img{
+        width: 20px;
+        height: max-content;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .card{
+        width: 100%;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+   .card .links-card
+    {
+        flex-direction: column;
+    }
+    .card .slider-container{
+        margin: 7px;
+    }
+    .card .descript-card
+    {
+        padding: 17px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .card .title-card
+    {
+        font-size: 20px;
+    }
+    .card .description-card
+    {
+        font-size: 14px;
+    }
+     .card .links-card{
+        padding: 10px;
+        padding-top: 0px;
+        
+    }
+}

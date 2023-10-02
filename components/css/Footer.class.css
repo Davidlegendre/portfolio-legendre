@@ -1,0 +1,14 @@
+.footer{
+    position: absolute;
+    bottom: 0px;
+    background-color: var(--background-color);
+    border-top: 1px solid var(--border-color);
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+    font-family: 'Segoe UI Semibold';
+
+}
+.footer > *{
+    opacity: 0.7;
+}

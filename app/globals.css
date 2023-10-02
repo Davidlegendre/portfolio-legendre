@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: white;
+    --btn-background: 200 10% 91%;
+    --btn-background-hover: 200 10% 89%;
+    --foreground: black;
+    --border-color: rgba(0, 0, 0, 0.349);
+    --background-color: rgba(255, 255, 255, 0.795);
+    --Depth4: 0 1.6px 3.6px 0 rgba(0, 0, 0, .132), 0 .3px .9px 0 rgba(0, 0, 0, .108);
+    --Depth8: 0 3.2px 7.2px 0 rgba(29, 29, 29, 0.295), 0 .6px 1.8px 0 rgba(34, 34, 34, 0.108);
+    --Depth16: 0 6.4px 14.4px 0 rgba(0, 0, 0, .132), 0 1.2px 3.6px 0 rgba(0, 0, 0, .108);
+    --Depth64: 0 25.6px 57.6px 0 rgba(175, 175, 175, 0.555), 0 4.8px 14.4px 0 rgba(117, 117, 117, 0.18);
+    --input-background: rgba(255, 255, 255, 0.692);
+    --background-aboutme: rgb(53, 151, 45);
+    --hover-text: white;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: rgb(34, 34, 34);
+      --btn-background: 200 10% 9%;
+      --btn-background-hover: 200 10% 12%;
+      --foreground: white;
+      --border-color: rgb(92, 92, 92);
+      --background-color: rgba(43, 43, 43, 0.7);
+      --Depth8: 0 3.2px 7.2px 0 rgba(0, 0, 0, .132), 0 .6px 1.8px 0 rgba(0, 0, 0, .108);
+      --Depth64: 0 25.6px 57.6px 0 rgba(0, 0, 0, .22), 0 4.8px 14.4px 0 rgba(0, 0, 0, .18);
+      --input-background: rgba(29, 29, 29, 0.74);
+      --background-aboutme: rgb(41, 167, 29);
+      --hover-text: white;
+    }
+  }
+}
+
+.icon{
+  font-family: 'Segoe MDL2 Assets';
+  font-size: 20px;
+  position: relative;
+ padding: 0px;
+  margin: 0px;
+}
+
+.icon-button{
+  padding: 7px;
+}
+
+.icon-button::after{
+  content: '';
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-color: transparent;
+  opacity: 0.10;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
+}
+
+.icon-button:hover::after{
+ opacity: 0.27;
+ background-color: var(--background-aboutme);
+ transition: cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
+}
+
+.body{
+  background-color: var(--background);
+  
+}
+
+p, span, pre, input[Type='button'], button{
+  color: var(--foreground);
+  
+}
+
+@layer base {
+  * {
+    @apply border-foreground/20;
+  }
+}
+
+.animate-in {
+  animation: animateIn 2.1s ease 0.15s both;
+  
+}
+
+.animate-infast {
+  animation: animateInFast 0.7s ease 0.15s both;
+}
+.animate-infast2 {
+  animation: animateInFast2 0.7s ease 0.15s both;
+}
+
+
+@keyframes animateIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animateInFast {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes animateInFast2 {
+  from {
+    opacity: 0;
+    transform: translateY(-7px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+input[Type='Text'], textarea,
+input[Type='Email']
+{
+  padding: 7px 17px;
+  background-color: var(--input-background);
+  border-radius: 7px;
+  color: var(--foreground);
+  border: 1px solid;
+  border-bottom: 4px solid;
+  border-color: var(--border-color);
+  outline-style: none;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
+}
+
+input[Type='Text']:focus, textarea:focus,
+input[Type='Text']:hover, textarea:hover,
+input[Type='Email']:focus,
+input[Type='Email']:hover{
+  border-color: var(--background-aboutme);
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) .3s;
+}
+
+input[Type='button'],a, 
+input[Type='submit']{
+  color: var(--foreground);
+  text-decoration: none;
+  padding: 7px 17px;
+  width: max-content;
+  border-radius: 7px; 
+  border: 2px solid;
+  box-shadow: var(--Depth4);
+  border-color: var(--border-color);
+  background-color: var(--background-color);
+  cursor: pointer;
+  
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .3s;
+}
+input[Type='button']:hover,a:hover,input[Type='submit']:hover{
+  background-color: var(--background-aboutme);
+  border-color: var(--background-aboutme);
+  box-shadow: var(--Depth8);
+  color: var(--hover-text) !important;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .3s;
+
+}
+

@@ -1,0 +1,32 @@
+.form{
+    padding: 17px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 470px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+
+.form-disable{
+    opacity: 0.4;   
+}
+.form-disable::after
+{
+    content: '';
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.form textarea{
+    height: 130px;
+    min-height: 130px;
+    max-height: 130px;
+}

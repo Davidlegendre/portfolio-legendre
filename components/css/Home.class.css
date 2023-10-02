@@ -1,0 +1,41 @@
+.isnullStyle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 0.5;
+}
+.homePage{
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    margin-top: 200px;
+    margin-bottom: 70px;
+}
+
+.homePage pre 
+{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+.homePage .title-projects
+{
+    font-size: 23px;
+    margin-bottom: 70px;
+    font-weight: bolder;
+}
+
+
+@media screen and (max-width: 540px){
+   
+    .homePage{
+        margin-top: 90px;
+    }
+    .homePage .title-projects
+    {
+        text-align: center;
+    }
+}
