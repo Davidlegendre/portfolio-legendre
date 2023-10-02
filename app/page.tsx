@@ -4,7 +4,7 @@ import '../components/css/Home.class.css'
 import AboutMeSection from "@/components/SectionAboutMe"
 import ProjectSection from "@/components/ProjectsSection"
 import { ToastContainer } from "react-toastify"
-
+export const dynamic = "force-dynamic";
 export default async function(){
     const supabase = createServerComponentClient({cookies})
     
