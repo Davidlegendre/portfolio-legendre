@@ -4,8 +4,13 @@
 
 @font-face {
   font-family: 'Segoe mdl2 assets';
+  
   src: url('../fonts/Segoe_mdl2_assets.ttf');
   }
+@font-face{
+  font-family: 'Winter Wind';
+  src: url('../fonts/Winter_Wind.ttf');
+}
 
 @layer base {
   :root {

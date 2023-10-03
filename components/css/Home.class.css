@@ -24,10 +24,16 @@
 .homePage .title-projects
 {
     font-size: 23px;
-    margin-bottom: 70px;
+    margin-bottom: 0px;
     font-weight: bolder;
 }
 
+.projects{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 @media screen and (max-width: 540px){
    

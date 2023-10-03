@@ -34,7 +34,7 @@ export default function HeaderNav() {
             height={48}
             alt="user"
           ></Image>
-          {ShowTitle ? <p className="animate-infast">CONTACTO</p> : <p className="animate-infast2">David Legendre</p>}
+          {ShowTitle ? <p className="animate-infast">CONTACTO</p> : <p className="animate-infast2 title-name">David Legendre</p>}
 
           <button onClick={() => open()}>
             <span className="icon icon-button">&#xE168;</span>

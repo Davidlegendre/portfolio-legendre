@@ -28,13 +28,18 @@ z-index: 999;
     border-color: var(--background-aboutme);
 }
 
+.header .title-name{
+  font-family: 'Winter Wind';
+  font-size: 28px;
+}
+
 .header-head
 {
     display: flex;
     align-items: center;
     gap: 20px;
     justify-content: space-between;
-    margin: 7px;
+    margin: 5px;
 }
 
 .whatsapp-contact{
@@ -148,6 +153,10 @@ z-index: 999;
     }
     .form{
         width: 100% !important;
+    }
+    .header .title-name
+    {
+      font-size: 22px;
     }
     @keyframes OpenFormAnimate {
       0% {

@@ -5,7 +5,7 @@ import ProjectItem from './ProjectItem';
 export default function ProjectSection({data}: {data:Root})
 {
     return (
-        <div>
+        <div className='projects'>
             {data.map(e => <ProjectItem Root2={e}></ProjectItem>)}
         </div>
     )
