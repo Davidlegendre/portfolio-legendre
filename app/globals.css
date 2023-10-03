@@ -48,7 +48,7 @@
 
 .icon{
   font-family: 'Segoe MDL2 Assets';
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
  padding: 0px;
   margin: 0px;
@@ -67,7 +67,7 @@
   opacity: 0.10;
   left: 0;
   top: 0;
-  border-radius: 15px;
+  border-radius: 25px;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
 }
 

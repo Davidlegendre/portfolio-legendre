@@ -20,7 +20,6 @@ export default function HeaderNav() {
   };
 
   return (
-    //https://avatars.githubusercontent.com/u/23003800?v=4
     <div className="container-header">
       <div
         className={

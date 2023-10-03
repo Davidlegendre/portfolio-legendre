@@ -20,16 +20,8 @@ export default async function SendEmail(Email: Mail) {
     }
     return true;
   } catch (error: any) {
-    console.error(error.response.data.errors);
-    const mensaje =
-      error?.response?.data?.errors?.Subject.length > 0
-        ? "Escriba su nombre"
-        : error?.response?.data?.errors?.Body.length > 0
-        ? "Escriba algun mensaje"
-        : error?.response?.data?.errors?.ToUser.length > 0
-        ? "Escriba su email"
-        : "";
-    toast(mensaje, {
+    console.error(error);
+    toast("Email no enviado", {
       position: "top-right",
       autoClose: 5000,
       hideProgressBar: true,

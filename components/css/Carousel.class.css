@@ -1,0 +1,9 @@
+.btn-carousel{
+    background-color: var(--background-color);
+    margin: 7px;
+    border-radius: 7px;
+}
+
+.btn-carousel-disable{
+    opacity: 0;
+}

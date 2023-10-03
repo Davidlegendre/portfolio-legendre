@@ -4,11 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import Carousel from "nuka-carousel";
 import "./css/ProjectItem.class.css";
+import { renderCenterLeftControls, renderCenterRightControls } from "./ButtonsNukaCarousel";
 
 export default function ProjectItem({ Root2 }: { Root2: Root2 }) {
   return (
     <div key={Root2.idPortfolio} className="card">
-      <Carousel className="imgs-card">
+      <Carousel renderCenterLeftControls={renderCenterLeftControls}
+        renderCenterRightControls={renderCenterRightControls} className="imgs-card">
         {Root2.Captures
           ? Root2.Captures.map((e) => (
               <Link href={e.url} target="_blank" key={e.id}>

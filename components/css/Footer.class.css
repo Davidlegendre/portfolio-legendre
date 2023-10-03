@@ -1,14 +1,12 @@
 .footer{
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     background-color: var(--background-color);
-    border-top: 1px solid var(--border-color);
+    box-shadow: var(--Depth8);
+    backdrop-filter: blur(13px);
     width: 100%;
     padding: 7px;
     font-size: 14px;
-    font-family: 'Segoe UI Semibold';
-
-}
-.footer > *{
-    opacity: 0.7;
+    text-align: center;
+    z-index: 999;
 }

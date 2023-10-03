@@ -1,16 +1,18 @@
 .aboutme{
-    height: 270px;   
+    height: 230px;   
     background-color: var(--background-color);
-    background-image: url("../../app/fondo.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: var(--Depth64);
     z-index: 9;
+}
+
+.aboutme .fondo-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .aboutme .links-section
@@ -22,7 +24,7 @@
 
 .aboutme .card-about{
     width: 80%;
-    max-width: 620px;
+    max-width: 720px;
     display: flex;   
     height: max-content;
     background-color: var(--background-color);

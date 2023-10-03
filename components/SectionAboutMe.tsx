@@ -2,6 +2,7 @@
 import "./css/AboutMe.class.css";
 import Link from "next/link";
 import Image from "next/image";
+import fondo from '../app/fondo.jpg'
 import { useState } from "react";
 export default function AboutMeSection() {
 
@@ -12,6 +13,7 @@ export default function AboutMeSection() {
 
   return (
     <div className="aboutme">
+      <Image className="fondo-img" src={fondo} width={1700} height={1700} alt="fondo"></Image>
       <div className="card-about">
         <div className="button-down-about">
           <span className="icon icon-default">&#xE1CB;</span>
