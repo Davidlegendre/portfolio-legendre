@@ -2,7 +2,7 @@
 import { FormEvent, useState } from "react";
 import "./css/FormularioContacto.class.css";
 import SendEmail from "@/Helpers/SendEmail.helper";
-import { Mail, ToUser } from "../Interfaces/EmailModel";
+import { Mail } from "../Interfaces/EmailModel";
 import { toast } from "react-toastify";
 
 export default function FormularioContacto() {
@@ -22,15 +22,16 @@ export default function FormularioContacto() {
       body: e.target.idea.value,
     };
     const result = await SendEmail(mail);
-    toast(result ? "Email enviado!!" : "Fallo al Enviar el Email", {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: true,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
+    if (result)
+      toast("Email enviado!!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     setEnable(true);
   };
 
@@ -45,6 +46,7 @@ export default function FormularioContacto() {
         id="email"
         name="email"
         disabled={!enable}
+        required
       />
       <input
         type="Text"
@@ -52,12 +54,14 @@ export default function FormularioContacto() {
         id="names"
         name="names"
         disabled={!enable}
+        required
       />
       <textarea
         maxLength={170}
         name="idea"
         id="idea"
         disabled={!enable}
+        required
         placeholder="Cuentame tu idea"
       ></textarea>
       <input

@@ -11,7 +11,7 @@ export default function ProjectItem({ Root2 }: { Root2: Root2 }) {
       <Carousel className="imgs-card">
         {Root2.Captures
           ? Root2.Captures.map((e) => (
-              <Link href={e.url} target="_blank">
+              <Link href={e.url} target="_blank" key={e.id}>
                 <Image src={e.url} width={1700} height={80} alt={e.url} />
               </Link>
             ))
@@ -24,7 +24,7 @@ export default function ProjectItem({ Root2 }: { Root2: Root2 }) {
       <div className="links-card">
         {Root2.Links
           ? Root2.Links.map((e) => (
-              <Link href={e.url} target="_blank">
+              <Link href={e.url} target="_blank" key={e.id}>
                  <Image
                     src={e.TypeURLs.icon}
                     width={16}
