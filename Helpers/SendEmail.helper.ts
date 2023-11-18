@@ -3,7 +3,7 @@ import { Mail } from "@/Interfaces/EmailModel";
 import { toast } from "react-toastify";
 
 export default async function SendEmail(Email: Mail) {
-  const url = "https://mailservice-xgyv-dev.fl0.io/api/Mail/send";
+  const url = "https://mailservice-dev-mkzd.4.us-1.fl0.io/api/Mail/send";
   const json = JSON.stringify(Email)
   try {
     const result = await axios(url, {
@@ -15,10 +15,7 @@ export default async function SendEmail(Email: Mail) {
       data: json,
     });
 
-    if (!result.status) {
-      return false;
-    }
-    return true;
+    return result.status;
   } catch (error: any) {
     console.error(error);
     toast("Email no enviado", {
