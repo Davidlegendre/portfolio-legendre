@@ -23,11 +23,12 @@ export default function AboutMeSection() {
         </div>
         <div className="description-about">
           <p className={Expand ? "expand": ""}>
-            1 año Desarrollador .NET Junior. 2 años Diseño Gráfico con CorelDraw
-            por cuenta propia. Técnico en Computación e Informática. Proactivo
-            en constante superación. Alto sentido de la Responsabilidad en el
-            equipo de trabajo. Alto sentido de la privacidad de los datos de los
-            clientes. Buscador de la mejor forma de hacer las cosas eficientes.
+            1 ano Desarrollador FullStack .NET. 2 ano Diseno Grafico con
+            CorelDraw por cuenta propia. Tecnico en Computación e Informática.
+            Proactivo en constante superación. Alto sentido de la
+            Responsabilidad en el equipo de trabajo. Alto sentido de la
+            privacidad de los datos de los clientes. Buscador de la mejor forma
+            de hacer las cosas eficientes y sostenibles.
           </p>
           <div className="links-section">
             <Link
@@ -50,6 +51,15 @@ export default function AboutMeSection() {
                 alt="Github"
               ></Image>
               Github
+            </Link>
+              <Link href="https://drive.google.com/file/d/1JPdN4ZYo5vBsUSuEHuUOIO_lP2NtIZsP/view?usp=sharing" target="_blank">
+              <Image
+                src="https://img.icons8.com/fluency/48/adobe-acrobat.png"
+                width={20}
+                height={20}
+                alt="CV"
+              ></Image>
+              CV 2024
             </Link>
           </div>
         </div>
