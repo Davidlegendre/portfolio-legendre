@@ -59,7 +59,7 @@ export default function AboutMeSection() {
                 height={20}
                 alt="CV"
               ></Image>
-              CV 2024
+              CV2024
             </Link>
           </div>
         </div>
