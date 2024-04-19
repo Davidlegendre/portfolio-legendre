@@ -18,7 +18,6 @@ export default function FormularioContacto() {
       validation(e.target.idea.value, "Ingresa una idea o un contacto")
     ) {
       const emails = getEmails();
-      console.log(emails)
       const mail: Mail = {
         toUser: emails,
         isHTMLBody: false,

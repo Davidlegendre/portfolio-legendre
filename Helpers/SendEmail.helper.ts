@@ -3,10 +3,10 @@ import { Mail } from "@/Interfaces/EmailModel";
 import { toast } from "react-toastify";
 
 export default async function SendEmail(Email: Mail) {
-  const url = process.env.MAIL_API!.toString();
+  const url = process.env.MAIL_API;
   const json = JSON.stringify(Email)
   try {
-    const result = await axios(url, {
+    const result = await axios(url!, {
       method: 'POST',
       headers:{
         'Content-Type': 'application/json'        
