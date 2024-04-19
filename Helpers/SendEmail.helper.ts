@@ -3,7 +3,7 @@ import { Mail } from "@/Interfaces/EmailModel";
 import { toast } from "react-toastify";
 
 export default async function SendEmail(Email: Mail) {
-  const url = process.env.MAIL_API;
+  const url = process.env.NEXT_PUBLIC_MAIL_API;
   const json = JSON.stringify(Email)
   try {
     const result = await axios(url!, {
