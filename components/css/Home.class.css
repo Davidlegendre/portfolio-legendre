@@ -26,6 +26,8 @@
     font-size: 23px;
     margin-bottom: 0px;
     font-weight: bolder;
+    display: flex;
+    justify-content: center;
 }
 
 .projects{
