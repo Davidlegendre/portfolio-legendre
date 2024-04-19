@@ -27,7 +27,7 @@ export function validation(e: string, mensaje: string){
 }
 
 export function getEmails(){
-  const emails = process.env.EMAILS?.split('|');
+  const emails = process.env.NEXT_PUBLIC_EMAILS?.split('|');
   console.log(emails)
   return [
     {
