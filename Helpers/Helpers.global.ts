@@ -25,3 +25,18 @@ export function validation(e: string, mensaje: string){
     }
     return true
 }
+
+export function getEmails(){
+  const emails = process.env.EMAILS!.toString().split('|');
+  return [
+    {
+      nombre: "David Legendre",
+      email: emails[0],
+    },
+    {
+      nombre: "David Legendre",
+      email: emails[1],
+    },
+  ]
+  
+}
