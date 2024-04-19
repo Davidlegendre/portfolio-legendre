@@ -5,6 +5,7 @@ import SendEmail from "@/Helpers/SendEmail.helper";
 import { Mail } from "../Interfaces/EmailModel";
 import { toast } from "react-toastify";
 import { validation } from "@/Helpers/Helpers.global";
+import { getEmails } from '../Helpers/Helpers.global';
 
 export default function FormularioContacto() {
   const [enable, setEnable] = useState(true);
@@ -16,17 +17,10 @@ export default function FormularioContacto() {
       validation(e.target.names.value, "Ingresa un nombre") &&
       validation(e.target.idea.value, "Ingresa una idea o un contacto")
     ) {
+      const emails = getEmails();
+      console.log(emails)
       const mail: Mail = {
-        toUser: [
-          {
-            nombre: "David Legendre",
-            email: "dlegendre74@gmail.com",
-          },
-          {
-            nombre: "David Legendre",
-            email: "legendre2013@hotmail.com",
-          },
-        ],
+        toUser: emails,
         isHTMLBody: false,
         subject: "Contacto: " + e.target.names.value,
         body:

@@ -2,7 +2,6 @@
 import "./css/AboutMe.class.css";
 import Link from "next/link";
 import Image from "next/image";
-import fondo from '../app/fondo.jpg'
 import { useState } from "react";
 export default function AboutMeSection() {
 
@@ -13,7 +12,7 @@ export default function AboutMeSection() {
 
   return (
     <div className="aboutme">
-      <Image className="fondo-img" src={fondo} width={1700} height={1700} alt="fondo"></Image>
+      <Image className="fondo-img" src={"https://res.cloudinary.com/dflatec/image/upload/v1713563468/y5wcwot945qe3wqf1jcp.jpg"} width={1700} height={1700} alt="fondo"></Image>
       <div className="card-about">
         <div className="button-down-about">
           <span className="icon icon-default">&#xE1CB;</span>
@@ -23,7 +22,7 @@ export default function AboutMeSection() {
         </div>
         <div className="description-about">
           <p className={Expand ? "expand": ""}>
-            1 ano Desarrollador FullStack .NET. 2 año Diseño Grafico con
+            1 año Desarrollador FullStack .NET. 2 año Diseño Grafico con
             CorelDraw por cuenta propia. Tecnico en Computación e Informática.
             Proactivo en constante superación. Alto sentido de la
             Responsabilidad en el equipo de trabajo. Alto sentido de la
