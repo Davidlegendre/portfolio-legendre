@@ -22,6 +22,12 @@ const nextConfig = {
         hostname: 'raw.githubusercontent.com',
         port: '',
         pathname : '/Davidlegendre/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        port: '',
+        pathname: '/dflatec/image/**'
       }
     ]
   },
