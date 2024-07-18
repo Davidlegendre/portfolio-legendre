@@ -73,12 +73,15 @@ margin-top: 20px;
         padding: 0px;
         margin-top: 0px;
         overflow: hidden;
+        height: max-content;
     }
 
    .card .links-card
     {
         flex-direction: column;
         position: relative;
+        width: 100%;
+        bottom: 0px;
     }
     .card .slider-container{
         margin: 7px;
