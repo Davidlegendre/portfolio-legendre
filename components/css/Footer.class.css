@@ -1,12 +1,25 @@
 .footer{
-    position: fixed;
-    bottom: 0px;
+   
     background-color: var(--background-color);
     box-shadow: var(--Depth8);
     backdrop-filter: blur(13px);
-    width: 100%;
+    width: 90%;
+    max-width: 270px;
+    border-radius: 70px;
+    border: 1px solid var(--border-color);    
     padding: 7px;
     font-size: 14px;
     text-align: center;
+   
+}
+
+
+.footer-content{
     z-index: 999;
+    bottom: 5px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
 }

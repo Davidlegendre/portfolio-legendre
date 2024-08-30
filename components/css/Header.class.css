@@ -12,7 +12,8 @@ z-index: 999;
 .header {
     position: relative;
     background-color: var(--background-color);
-    width: max-content;
+    width: 100%;
+    max-width: 720px;
     border: 1px solid var(--border-color);
     border-radius: 45px;
     box-shadow: var(--Depth8);
@@ -41,25 +42,23 @@ z-index: 999;
     margin: 5px;
 }
 
+
+
 .whatsapp-contact{
-  position: absolute;
-  background-color: var(--background-aboutme);
-  width: 60%;
-  left: 20%;
+  background-color: transparent;
   display: flex;
   border: 0px;
   align-items: center;
   justify-content: center;
-  border-radius: 0px 0px 70px 70px;
   cursor: pointer;
-  gap: 5px;
   padding: 0px;
-  & p{
-    color: white;
-  }
+  box-shadow: none !important;
+  width: 38px;
+  border-radius: 50%;
   & img {
-    width: 20px;
-    height: 20px;
+    object-fit: contain;
+    width: 24px;   
+    border: 0px;
   }
 }
 

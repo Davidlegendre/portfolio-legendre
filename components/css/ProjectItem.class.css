@@ -56,7 +56,6 @@ margin-top: 20px;
         gap: 10px;
         justify-content: center;
         align-items: center;
-        border: 0px;
     }
     & a:hover p{
         color: white;

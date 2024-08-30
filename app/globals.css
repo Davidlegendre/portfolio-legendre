@@ -166,13 +166,12 @@ input[Type='submit']{
   text-decoration: none;
   padding: 7px 17px;
   width: max-content;
-  border-radius: 7px; 
+  border-radius: 70px; 
   border: 2px solid;
   box-shadow: var(--Depth4);
   border-color: var(--border-color);
   background-color: var(--background-color);
-  cursor: pointer;
-  
+  cursor: pointer;  
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .3s;
 }
 input[Type='button']:hover,a:hover,input[Type='submit']:hover{

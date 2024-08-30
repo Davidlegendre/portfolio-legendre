@@ -12,7 +12,7 @@ export default function AboutMeSection() {
 
   return (
     <div className="aboutme">
-      <Image className="fondo-img" src={"https://res.cloudinary.com/dflatec/image/upload/v1713563468/y5wcwot945qe3wqf1jcp.jpg"} width={1700} height={1700} alt="fondo"></Image>
+      <Image className="fondo-img" src={"https://res.cloudinary.com/dflatec/image/upload/v1713563468/y5wcwot945qe3wqf1jcp.jpg"} width={1366} height={980} alt="fondo"></Image>
       <div className="card-about">
         <div className="button-down-about">
           <span className="icon icon-default">&#xE1CB;</span>
