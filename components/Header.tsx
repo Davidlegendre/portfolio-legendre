@@ -22,7 +22,7 @@ export default function HeaderNav() {
             className="whatsapp-contact"
           >
             <Image
-              src="https://img.icons8.com/fluency/48/whatsapp.png"
+              src="https://img.icons8.com/?size=100&id=AltfLkFSP7XN&format=png&color=000000"
               width={22}
               height={22}
               alt="whatsapp"
