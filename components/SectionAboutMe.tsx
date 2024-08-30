@@ -35,7 +35,7 @@ export default function AboutMeSection() {
               target="_blank"
             >
               <Image
-                src="https://img.icons8.com/fluency/48/linkedin.png"
+                src="https://img.icons8.com/?size=100&id=qNUNvR9aEWql&format=png&color=000000"
                 width={20}
                 height={20}
                 alt="LinkedIn"
@@ -44,7 +44,7 @@ export default function AboutMeSection() {
             </Link>
             <Link href="https://github.com/Davidlegendre" target="_blank">
               <Image
-                src="https://img.icons8.com/fluency/48/github.png"
+                src="https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000"
                 width={20}
                 height={20}
                 alt="Github"
@@ -53,7 +53,7 @@ export default function AboutMeSection() {
             </Link>
               <Link href="https://drive.google.com/file/d/1JPdN4ZYo5vBsUSuEHuUOIO_lP2NtIZsP/view?usp=sharing" target="_blank">
               <Image
-                src="https://img.icons8.com/fluency/48/adobe-acrobat.png"
+                src="https://img.icons8.com/?size=100&id=rZObyIJRui2T&format=png&color=000000"
                 width={20}
                 height={20}
                 alt="CV"
