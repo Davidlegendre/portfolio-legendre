@@ -14,7 +14,7 @@ export default function ProjectItem({ Root2 }: { Root2: Root2 }) {
         {Root2.Captures
           ? Root2.Captures.map((e) => (
               <Link href={e.url} target="_blank" key={e.id}>
-                <Image src={e.url} width={1700} height={80} alt={e.url} />
+                <img src={e.url} width={1700} height={80} alt={e.url} />
               </Link>
             ))
           : ""}
@@ -27,12 +27,12 @@ export default function ProjectItem({ Root2 }: { Root2: Root2 }) {
         {Root2.Links
           ? Root2.Links.map((e) => (
               <Link href={e.url} target="_blank" key={e.id}>
-                 <Image
+                 <img
                     src={e.TypeURLs.icon}
                     width={16}
                     height={16}
                     alt={e.TypeURLs.description}
-                  ></Image>
+                  ></img>
                   <p>{e.TypeURLs.description}</p>
               </Link>
             ))
