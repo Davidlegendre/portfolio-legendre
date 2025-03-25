@@ -51,7 +51,7 @@ export default function AboutMeSection() {
               ></Image>
               Github
             </Link>
-              <Link href="https://drive.google.com/file/d/1JPdN4ZYo5vBsUSuEHuUOIO_lP2NtIZsP/view?usp=sharing" target="_blank">
+              <Link href="https://drive.google.com/file/d/1ehtFYRuiuieZqJiUdUg5FK-KyubUpSEs/view?usp=sharing" target="_blank">
               <Image
                 src="https://img.icons8.com/?size=100&id=rZObyIJRui2T&format=png&color=000000"
                 width={20}
