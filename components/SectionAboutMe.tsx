@@ -22,12 +22,7 @@ export default function AboutMeSection() {
         </div>
         <div className="description-about">
           <p className={Expand ? "expand": ""}>
-            1 año Desarrollador FullStack .NET. 2 año Diseño Grafico con
-            CorelDraw por cuenta propia. Tecnico en Computación e Informática.
-            Proactivo en constante superación. Alto sentido de la
-            Responsabilidad en el equipo de trabajo. Alto sentido de la
-            privacidad de los datos de los clientes. Buscador de la mejor forma
-            de hacer las cosas eficientes y sostenibles.
+            2 años Desarrollador FullStack .NET. 2 año Diseño Gráfico con CorelDraw por cuenta propia. Técnico en Computación e Informática. Proactivo en constante superación. Alto sentido de la Responsabilidad en el equipo de trabajo. Alto sentido de la privacidad de los datos de los clientes.  Buscador de la mejor forma de hacer las cosas eficientes y sostenibles.
           </p>
           <div className="links-section">
             <Link
