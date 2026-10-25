@@ -17,8 +17,10 @@ import {
 import {
   IconArrowDown,
   IconArrowUpRight,
+  IconBrandGithub,
   IconCircleCheck,
   IconCode,
+  IconFileCv,
   IconSparkles,
 } from "@tabler/icons-react";
 import { CtaBand, Eyebrow, StatusBadge } from "@/components/portfolio/UiParts";
@@ -28,8 +30,7 @@ import { portfolioIdentity, portfolioLinks } from "@/lib/constantes";
 
 export const metadata: Metadata = {
   title: `Inicio · ${portfolioIdentity.name}`,
-  description:
-    `Portfolio de ${portfolioIdentity.fullName}, ${portfolioIdentity.role}.`,
+  description: `Portfolio de ${portfolioIdentity.fullName}, ${portfolioIdentity.role}.`,
 };
 
 export default async function HomePage() {
@@ -61,16 +62,21 @@ export default async function HomePage() {
                 </Text>
               </Title>
               <Text c="dimmed" size="lg" maw={590} lh={1.65}>
-                {portfolioIdentity.role} y Técnico en Computación e
-                Informática. Me interesa crear productos eficientes, sostenibles
-                y cuidadosos con la privacidad de las personas.
+                {portfolioIdentity.role} y Técnico en Computación e Informática.
+                Me interesa crear productos eficientes, sostenibles y cuidadosos
+                con la privacidad de las personas.
               </Text>
               <Group mt="sm" gap="sm">
                 <Button
                   component="a"
                   href="/proyectos"
                   radius="xl"
-                  styles={{ root: { backgroundColor: "var(--mantine-color-text)", color: "var(--mantine-color-body)" } }}
+                  styles={{
+                    root: {
+                      backgroundColor: "var(--mantine-color-text)",
+                      color: "var(--mantine-color-body)",
+                    },
+                  }}
                   rightSection={<IconArrowDown size={16} />}
                 >
                   Explorar proyectos
@@ -125,7 +131,7 @@ export default async function HomePage() {
                   zIndex: 1,
                   transform: "rotate(-5deg)",
                   background:
-                    "radial-gradient(circle at 82% 15%, #515151 0, transparent 36%), linear-gradient(145deg,#292929,#101010 70%)",
+                    "radial-gradient(circle at 82% 15%, #515151 0, transparent 40%), linear-gradient(145deg,#292929,#101010 70%)",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
@@ -194,16 +200,76 @@ export default async function HomePage() {
             </Box>
           </GridCol>
         </Grid>
+
+        <SimpleGrid cols={2} spacing="sm" maw={480} mx="auto" mb="md">
+          <Button
+            component="a"
+            href={portfolioLinks.github}
+            target="_blank"
+            rel="noreferrer"
+            variant="default"
+            radius="lg"
+            h={70}
+            fullWidth
+          >
+            <IconArrowUpRight
+              size={16}
+              style={{
+                position: "absolute",
+                top: 10,
+                right: 10,
+              }}
+            />
+            <Stack gap={8} align="center">
+              <IconBrandGithub size={24} />
+              <Text size="sm" fw={600}>
+                GitHub
+              </Text>
+            </Stack>
+          </Button>
+          <Button
+            component="a"
+            href={portfolioLinks.cv}
+            target="_blank"
+            rel="noreferrer"
+            variant="default"
+            radius="lg"
+            h={70}
+            fullWidth
+          >
+            <IconArrowUpRight
+              size={16}
+              style={{
+                position: "absolute",
+                top: 10,
+                right: 10,
+              }}
+            />
+            <Stack gap={8} align="center">
+              <IconFileCv size={24} />
+              <Text size="sm" fw={600}>
+                Ver CV
+              </Text>
+            </Stack>
+          </Button>
+        </SimpleGrid>
+
         <SimpleGrid
           cols={{ base: 1, sm: 3 }}
           spacing="sm"
           p="sm"
-          bg="var(--mantine-color-default)"
-          style={{ borderRadius: 20, border: "1px solid var(--mantine-color-default-border)" }}
+          style={{
+            borderRadius: 20,
+            border: "1px solid var(--mantine-color-default-border)",
+          }}
         >
           {[
             ["Experiencia", "2+", "Años desarrollando soluciones Full Stack"],
-            ["Especialidad", ".NET · Next.js", "Desarrollo de aplicaciones y servicios"],
+            [
+              "Especialidad",
+              ".NET · Next.js",
+              "Desarrollo de aplicaciones y servicios",
+            ],
             ["Enfoque", "Full Stack", "De la lógica de negocio a la interfaz"],
           ].map(([label, value, detail]) => (
             <Paper
@@ -211,6 +277,8 @@ export default async function HomePage() {
               p={{ base: "sm", sm: "lg" }}
               radius="lg"
               withBorder
+              shadow="md"
+              bg="var(--mantine-color-default)"
             >
               <Text c="dimmed" size="xs" fw={700} tt="uppercase">
                 {label}
@@ -237,7 +305,12 @@ export default async function HomePage() {
                 Proyectos seleccionados
               </Title>
             </Stack>
-            <Anchor href="/proyectos" c="var(--mantine-color-text)" fw={600} size="sm">
+            <Anchor
+              href="/proyectos"
+              c="var(--mantine-color-text)"
+              fw={600}
+              size="sm"
+            >
               Ver portafolio completo <IconArrowUpRight size={15} />
             </Anchor>
           </Group>
@@ -260,7 +333,7 @@ export default async function HomePage() {
           title="Hagamos que una buena idea funcione."
           description="Cuéntame qué necesitas y lo conversamos sin compromiso."
           buttonLabel="Escríbeme por WhatsApp"
-                  href={portfolioLinks.whatsapp}
+          href={portfolioLinks.whatsapp}
         />
       </Container>
     </Box>

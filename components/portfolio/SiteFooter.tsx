@@ -56,7 +56,7 @@ export default function SiteFooter() {
             </Anchor>
           </Group>
         </Group>
-        <Group justify="center" gap={6}>
+        <Group justify="center" gap={6} mb={{base: 80, md: 0}}>
           <Text size="xs" c="dimmed">Powered by <Text span fw={600} c="var(--mantine-color-text)">GitHub Copilot</Text></Text>
           <IconHeartFilled size={12} color="var(--mantine-color-red-6)" aria-label="con cariño" />
           <Text size="xs" c="dimmed">Diseño con <Text span fw={600} c="var(--mantine-color-text)">Google Stitch</Text></Text>

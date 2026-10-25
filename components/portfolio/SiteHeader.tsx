@@ -60,7 +60,8 @@ export default function SiteHeader() {
         style={{
           zIndex: 100,
           backdropFilter: "blur(18px)",
-          backgroundColor: "light-dark(rgba(250,249,247,.88),rgba(16,16,16,.88))",
+          backgroundColor:
+            "light-dark(rgba(250,249,247,.88),rgba(16,16,16,.88))",
           borderBottom: "1px solid var(--mantine-color-default-border)",
         }}
       >
@@ -73,13 +74,19 @@ export default function SiteHeader() {
               c="inherit"
               aria-label={`${portfolioIdentity.name}, inicio`}
             >
-              <Group gap="xs" wrap="nowrap">
+              <Group gap="10px" wrap="nowrap" align="center">
                 <Badge
                   variant="filled"
                   radius="md"
                   size="lg"
                   styles={{
-                    root: { width: 34, height: 34, padding: 0, backgroundColor: "var(--mantine-color-text)", color: "var(--mantine-color-body)" },
+                    root: {
+                      width: 34,
+                      height: 34,
+                      padding: 0,
+                      backgroundColor: "var(--mantine-color-text)",
+                      color: "var(--mantine-color-body)",
+                    },
                     label: { fontSize: 15 },
                   }}
                 >
@@ -94,6 +101,7 @@ export default function SiteHeader() {
                     component="span"
                     className={winterWind.className}
                     fw={400}
+                    size="24"
                   >
                     {portfolioIdentity.name}
                   </Text>
@@ -142,12 +150,14 @@ export default function SiteHeader() {
             </Group>
             <Group gap="xs" wrap="nowrap">
               <SegmentedControl
-                visibleFrom="sm"
-                size="xs"
+                visibleFrom="md"
+                size="sm"
                 value={isMounted ? colorScheme : "light"}
                 onChange={(value) =>
                   setColorScheme(value as "light" | "dark" | "auto")
                 }
+                withItemsBorders={false}
+                radius="xl"
                 data={[
                   { value: "light", label: <IconSun size={14} /> },
                   { value: "dark", label: <IconMoon size={14} /> },
@@ -162,7 +172,12 @@ export default function SiteHeader() {
                 rel="noreferrer"
                 radius="xl"
                 size="xs"
-                styles={{ root: { backgroundColor: "var(--mantine-color-text)", color: "var(--mantine-color-body)" } }}
+                styles={{
+                  root: {
+                    backgroundColor: "var(--mantine-color-text)",
+                    color: "var(--mantine-color-body)",
+                  },
+                }}
                 rightSection={<IconArrowUpRight size={14} />}
               >
                 Hablemos
@@ -184,11 +199,13 @@ export default function SiteHeader() {
           left: 0,
           right: 0,
           backdropFilter: "blur(18px)",
-          backgroundColor: "light-dark(rgba(250,249,247,.92),rgba(16,16,16,.92))",
+          backgroundColor:
+            "light-dark(rgba(250,249,247,.92),rgba(16,16,16,.92))",
           borderTop: "1px solid var(--mantine-color-default-border)",
         }}
         aria-label="Navegación móvil"
       >
+        
         <Group justify="space-around" wrap="nowrap">
           {navigation.map(({ href, label, icon: Icon }) => (
             <Anchor
@@ -210,6 +227,23 @@ export default function SiteHeader() {
             </Anchor>
           ))}
         </Group>
+        <SegmentedControl
+          size="sm"
+          style={{margin: '0 auto', width: '100%'}}
+          mt={10}
+          value={isMounted ? colorScheme : "light"}
+          onChange={(value) =>
+            setColorScheme(value as "light" | "dark" | "auto")
+          }
+          withItemsBorders={false}
+          radius="xl"
+          data={[
+            { value: "light", label: <IconSun size={14} /> },
+            { value: "dark", label: <IconMoon size={14} /> },
+            { value: "auto", label: <IconDeviceDesktop size={14} /> },
+          ]}
+          aria-label="Tema de color"
+        />
       </Paper>
     </>
   );
