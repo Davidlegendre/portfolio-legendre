@@ -1,0 +1,27 @@
+[
+  {
+    "titulo": "iZathfit System",
+    "description": "El sistema se realiza la gestion de los paquetes (planes, servicios, tiempo, personas, etc) y saldos (los pagos de los clientes y muestra resumen por identificacion), esta realizado en WPF usando MVVM. Esta orientado a Gimnasios",
+    "idPortfolio": "e9861ddc-fc1e-456a-a046-a42ff68a848a"
+  },
+  {
+    "titulo": "MailService",
+    "description": "Servicio de envio de emails mediante la libreria MailKit, el servicio permite enviar archivos pdf, docx, jpg y png, a cualquier usuario siempre que no sobre pase los limites; permite enviar a muchos usuarios y muchos emails, inclusive enviar html como mensaje",
+    "idPortfolio": "63c4c0b0-8f3d-438b-9ce5-5c806bd5a1a3"
+  },
+  {
+    "titulo": "WebMinimalist",
+    "description": "A WebBrowser with style of Safari for Windows, but is not Complete as Edge :)",
+    "idPortfolio": "0767ae9d-ebd7-4acd-8b50-37f7e793a1ac"
+  },
+  {
+    "titulo": "iLegMusic",
+    "description": "Aplicacion para windows que recolecta las musicas segun la ruta que le pongas, extrae los tags y los separa por musicas, albumes y artistas, ademas las musicas los agrupa en el abecedario o numero",
+    "idPortfolio": "772d8534-98e1-4d3c-a73a-5741519244ef"
+  },
+  {
+    "titulo": "Book Component",
+    "description": "Componente hecho en React inspirado en el componente de Book de Geist de Vercel UI",
+    "idPortfolio": "a76ff2b4-71b8-41dc-947c-8dd89146516b"
+  }
+]

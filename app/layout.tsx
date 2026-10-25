@@ -1,31 +1,33 @@
-import HeaderNav from '@/components/Header'
-import './globals.css'
-import "react-toastify/dist/ReactToastify.css";
-import Footer from '@/components/Footer';
+import LayoutGlobalComponent from '@/components/common/layoutComponent.global';
 import { Metadata } from 'next';
+import { externalResources, portfolioIdentity } from '@/lib/constantes';
 
 export const metadata: Metadata = {
-  title: 'David Legendre - Portfolio',
-  description: 'Portfolio de David Fernando Legendre Albites, proyectos realizados o practicados',
+  title: `${portfolioIdentity.name} - Portfolio`,
+  description: `Portfolio de ${portfolioIdentity.fullName}, proyectos realizados o practicados`,
   icons: {
     icon: [
-      { url: 'https://img.icons8.com/?size=100&id=UjcGNVXknmz3&format=png&color=000000', rel: 'icon'}
+      { url: externalResources.favicon, rel: 'icon'}
     ],
   }
 }
-
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="es">
-      <body className='body'>
-        <HeaderNav></HeaderNav>
-        <main>{children}</main>
-        <Footer></Footer>
+      <head>
+        <link rel="preconnect" href={externalResources.googleFonts.api} />
+        <link rel="preconnect" href={externalResources.googleFonts.static} crossOrigin="anonymous" />
+        <link href={externalResources.googleFonts.hankenGrotesk} rel="stylesheet" />
+      </head>
+      <body style={{overflowX: 'hidden'}}>
+        <LayoutGlobalComponent>
+         {children}
+        </LayoutGlobalComponent>       
       </body>
     </html>
-  )
+  );
 }
