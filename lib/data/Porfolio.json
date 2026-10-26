@@ -1,7 +1,17 @@
 [
   {
+    "titulo": "BackOffice Línea",
+    "description": "[Software Propietario] Sistema de gestión de Logísitica, Recursos Humanos, Compras, Comprobantes, Contabilidad, entre otras cosas; direccionado a las áreas de administración de Transporte Línea S.A., desarrollado en .Net y Nextjs, usando Mantine UI, SignalR, EF Core y SQL Server (al ser propietario no se puede mostrar el código fuente)",
+    "idPortfolio": "0e084dde-e07b-4b07-af20-18386ebab921"
+  },
+  {
+    "titulo": "Api Integraciones",
+    "description": "[Software Propietario] Api para integrar datos de otros sistemas a bases de datos legacy, transformandolos en el proceso según corresponda, trabaja mediante tickets de sincronizaciones, usando el patron Delegate y el patron Strategy, desarrollado en .Net 8, usando Dapper y SQL Server (al ser propietario no se puede mostrar el código fuente)",
+    "idPortfolio": "6e8caf63-e972-4d8d-9969-9c581d16806e"
+  },
+  {
     "titulo": "iZathfit System",
-    "description": "El sistema se realiza la gestion de los paquetes (planes, servicios, tiempo, personas, etc) y saldos (los pagos de los clientes y muestra resumen por identificacion), esta realizado en WPF usando MVVM. Esta orientado a Gimnasios",
+    "description": "El sistema realiza la gestion de los paquetes (planes, servicios, tiempo, personas, etc) y saldos (los pagos de los clientes y muestra resumen por identificacion), esta realizado en WPF usando MVVM. Esta orientado a Gimnasios",
     "idPortfolio": "e9861ddc-fc1e-456a-a046-a42ff68a848a"
   },
   {

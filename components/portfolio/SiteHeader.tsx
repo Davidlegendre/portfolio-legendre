@@ -61,8 +61,9 @@ export default function SiteHeader() {
           zIndex: 100,
           backdropFilter: "blur(18px)",
           backgroundColor:
-            "light-dark(rgba(250,249,247,.88),rgba(16,16,16,.88))",
+            "light-dark(rgba(250,249,247,.8),rgba(16,16,16,.8))",
           borderBottom: "1px solid var(--mantine-color-default-border)",
+          overflow: "hidden",
         }}
       >
         <Container size={1160} px={{ base: 18, sm: 28, lg: 32 }}>
@@ -159,9 +160,9 @@ export default function SiteHeader() {
                 withItemsBorders={false}
                 radius="xl"
                 data={[
-                  { value: "light", label: <IconSun size={14} /> },
-                  { value: "dark", label: <IconMoon size={14} /> },
-                  { value: "auto", label: <IconDeviceDesktop size={14} /> },
+                  { value: "light", label: <IconSun size={16} />},
+                  { value: "dark", label: <IconMoon size={16} /> },
+                  { value: "auto", label: <IconDeviceDesktop size={16} /> },
                 ]}
                 aria-label="Tema de color"
               />
@@ -172,12 +173,6 @@ export default function SiteHeader() {
                 rel="noreferrer"
                 radius="xl"
                 size="xs"
-                styles={{
-                  root: {
-                    backgroundColor: "var(--mantine-color-text)",
-                    color: "var(--mantine-color-body)",
-                  },
-                }}
                 rightSection={<IconArrowUpRight size={14} />}
               >
                 Hablemos

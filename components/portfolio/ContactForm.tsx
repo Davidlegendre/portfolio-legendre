@@ -87,7 +87,6 @@ export default function ContactForm() {
           <Button
             type="submit"
             radius="xl"
-            styles={{ root: { backgroundColor: "var(--mantine-color-text)", color: "var(--mantine-color-body)" } }}
             rightSection={<IconArrowUpRight size={16} />}
           >
             {ready ? "Abrir WhatsApp de nuevo" : "Preparar mensaje"}

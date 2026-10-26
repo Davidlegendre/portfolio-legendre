@@ -12,6 +12,8 @@ import {
   SimpleGrid,
   Stack,
   Text,
+  Timeline,
+  TimelineItem,
   ThemeIcon,
   Title,
 } from "@mantine/core";
@@ -60,7 +62,7 @@ export default function AboutPage() {
       <Grid align="start" gutter="lg">
         <GridCol span={{ base: 12, md: 4 }}>
           <Stack>
-            <Paper withBorder radius="xl" p="lg" shadow="sm">
+            <Paper withBorder radius="lg" p="lg" shadow="sm">
               <Stack gap="md">
                 <Box
                   mih={190}
@@ -181,7 +183,6 @@ export default function AboutPage() {
                     target="_blank"
                     rel="noreferrer"
                     variant="light"
-                    color="green"
                     size="xs"
                     radius="xl"
                     rightSection={<IconArrowUpRight size={14} />}
@@ -195,7 +196,7 @@ export default function AboutPage() {
         </GridCol>
         <GridCol span={{ base: 12, md: 8 }}>
           <Stack>
-            <Paper withBorder radius="xl" p={{ base: "md", sm: "lg" }}>
+            <Paper withBorder radius="lg" p={{ base: "md", sm: "lg" }}>
               <Group gap="sm" mb="lg">
                 <ThemeIcon variant="light" color="gray" radius="md">
                   <IconSparkles size={17} />
@@ -230,7 +231,7 @@ export default function AboutPage() {
                 ].map(([number, title, description, Icon]) => {
                   const PrincipleIcon = Icon as typeof IconCode;
                   return (
-                    <Paper key={String(number)} p="md" radius="md" bg="var(--mantine-color-default)">
+                    <Paper key={String(number)} p="md" radius="lg" bg="var(--mantine-color-default)">
                       <Text size="xs" c="dimmed" fw={700}>
                         {String(number)} /
                       </Text>
@@ -254,7 +255,7 @@ export default function AboutPage() {
               </SimpleGrid>
             </Paper>
 
-            <Paper withBorder radius="xl" p={{ base: "md", sm: "lg" }}>
+            <Paper withBorder radius="lg" p={{ base: "md", sm: "lg" }}>
               <Group gap="sm" mb="lg">
                 <ThemeIcon variant="light" color="gray" radius="md">
                   <IconCode size={17} />
@@ -266,13 +267,7 @@ export default function AboutPage() {
                   </Title>
                 </Stack>
               </Group>
-              <Stack
-                gap="lg"
-                pl="md"
-                style={{
-                  borderLeft: "1px solid var(--mantine-color-default-border)",
-                }}
-              >
+              <Timeline active={10} bulletSize={14} lineWidth={2}>
                 {[
                   [
                     "Desarrollador Full Stack .NET",
@@ -290,36 +285,28 @@ export default function AboutPage() {
                     "Exploro composición visual y herramientas como CorelDRAW para complementar mi perspectiva técnica.",
                   ],
                 ].map(([title, period, detail]) => (
-                  <Box key={title} pos="relative">
-                    <Box
-                      pos="absolute"
-                      left={-21}
-                      top={5}
-                      w={9}
-                      h={9}
-                      bg="green.6"
-                      style={{
-                        border: "2px solid var(--mantine-color-body)",
-                        borderRadius: 20,
-                      }}
-                    />
-                    <Group justify="space-between" align="start" gap="xs">
-                      <Title order={3} size={14}>
-                        {title}
-                      </Title>
-                      <Badge variant="light" color="gray" size="xs">
-                        {period}
-                      </Badge>
-                    </Group>
-                    <Text c="dimmed" size="xs" lh={1.65} mt={5}>
+                  <TimelineItem
+                    key={title}
+                    title={
+                      <Group justify="space-between" align="start" gap="xs">
+                        <Title order={3} size={14}>
+                          {title}
+                        </Title>
+                        <Badge variant="light" size="md">
+                          {period}
+                        </Badge>
+                      </Group>
+                    }
+                  >
+                    <Text size="xs" lh={1.65} opacity={0.7}>
                       {detail}
                     </Text>
-                  </Box>
+                  </TimelineItem>
                 ))}
-              </Stack>
+              </Timeline>
             </Paper>
 
-            <Paper withBorder radius="xl" p={{ base: "md", sm: "lg" }}>
+            <Paper withBorder radius="lg" p={{ base: "md", sm: "lg" }}>
               <Group gap="sm" mb="md">
                 <ThemeIcon variant="light" color="gray" radius="md">
                   <IconCode size={17} />

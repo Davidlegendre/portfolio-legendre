@@ -26,7 +26,7 @@ export default function PortfolioProjectCard({ project }: { project: Root2 }) {
   return (
     <Paper
       withBorder
-      radius="xl"
+      radius="lg"
       shadow="sm"
       style={{ overflow: "hidden", height: "100%" }}
     >

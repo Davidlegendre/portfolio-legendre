@@ -1,3 +1,4 @@
+'use client'
 import {
   Anchor,
   Badge,
@@ -16,6 +17,7 @@ import {
   IconCircleCheck,
 } from "@tabler/icons-react";
 import { portfolioIdentity } from "@/lib/constantes";
+import { FluentLink } from "../common/FluentLink.component";
 
 export const pageWidth = 1160;
 
@@ -165,7 +167,7 @@ export function CtaBand({
       radius="xl"
       size="md"
       rightSection={<IconArrowUpRight size={17} />}
-      styles={{ root: { flexShrink: 0, backgroundColor: "var(--mantine-color-body)", color: "var(--mantine-color-text)" } }}
+      styles={{ root: { flexShrink: 0 } }}
     >
       {buttonLabel}
     </Button>
@@ -176,13 +178,13 @@ export function CtaBand({
       radius="xl"
       size="md"
       rightSection={<IconArrowUpRight size={17} />}
-      styles={{ root: { flexShrink: 0, backgroundColor: "var(--mantine-color-body)", color: "var(--mantine-color-text)" } }}
+      styles={{ root: { flexShrink: 0 } }}
     >
       {buttonLabel}
     </Button>
   );
   return (
-    <Paper p={{ base: "lg", sm: 40 }} radius="xl" mt={35} style={{ backgroundColor: "var(--mantine-color-text)", color: "var(--mantine-color-body)" }}>
+    <Paper p={{ base: "lg", sm: 40 }} radius="lg" mt={35} style={{ backgroundColor: "var(--mantine-color-text)", color: "var(--mantine-color-body)" }}>
       <Group justify="space-between" align="center" gap="xl">
         <Stack gap="xs" maw={680}>
           <Eyebrow>COLABORACIÓN · {portfolioIdentity.name.toUpperCase()}</Eyebrow>

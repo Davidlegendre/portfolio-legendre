@@ -71,12 +71,6 @@ export default async function HomePage() {
                   component="a"
                   href="/proyectos"
                   radius="xl"
-                  styles={{
-                    root: {
-                      backgroundColor: "var(--mantine-color-text)",
-                      color: "var(--mantine-color-body)",
-                    },
-                  }}
                   rightSection={<IconArrowDown size={16} />}
                 >
                   Explorar proyectos
@@ -85,7 +79,7 @@ export default async function HomePage() {
                   component="a"
                   href="/contacto"
                   radius="xl"
-                  variant="default"
+                  variant="light"
                   rightSection={<IconArrowUpRight size={16} />}
                 >
                   Conversemos
@@ -122,7 +116,7 @@ export default async function HomePage() {
               />
               <Paper
                 p="lg"
-                radius={28}
+                radius="lg"
                 w="min(330px,75%)"
                 mih={300}
                 shadow="xl"
@@ -324,7 +318,7 @@ export default async function HomePage() {
               ))}
             </SimpleGrid>
           ) : (
-            <Paper withBorder radius="xl" p="xl">
+            <Paper withBorder radius="lg" p="xl">
               <Text c="dimmed">Todavía no hay proyectos para mostrar.</Text>
             </Paper>
           )}

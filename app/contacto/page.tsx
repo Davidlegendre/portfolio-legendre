@@ -159,7 +159,7 @@ export default function ContactPage() {
         <GridCol span={{ base: 12, md: 7 }}>
           <Paper
             withBorder
-            radius="xl"
+            radius="lg"
             p={{ base: "md", sm: "xl" }}
             shadow="sm"
           >

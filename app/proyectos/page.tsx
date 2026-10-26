@@ -44,7 +44,7 @@ export default async function ProjectsPage() {
           ))}
         </SimpleGrid>
       ) : (
-        <Paper withBorder radius="xl" p="xl">
+        <Paper withBorder radius="lg" p="xl">
           <Text c="dimmed">Todavía no hay proyectos para mostrar.</Text>
         </Paper>
       )}

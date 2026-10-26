@@ -16,7 +16,7 @@ export default function LayoutGlobalComponent({
 }) {
   const themeMantine = createTheme({
     /** Aquí defines tu tema */
-    primaryColor: "gray",
+    primaryColor: "green",
     fontFamily: "Hanken Grotesk, sans-serif",
     defaultRadius: radiusStyle,
     fontSizes: uiScale.fontSizes,
