@@ -192,6 +192,31 @@ export default function AboutPage() {
                 </Stack>
               </Group>
             </Paper>
+            <Paper withBorder radius="lg" p="md" bg="var(--mantine-color-default)">
+              <Group wrap="nowrap" align="start">
+                <Stack gap={5} style={{ flex: 1 }}>
+                  <Text fw={700} size="sm">
+                   Sigueme en SUNO AI
+                  </Text>
+                  <Text size="xs" c="dimmed">
+                    Si te gusta la música, puedes seguirme en SUNO AI para escuchar mis creaciones y proyectos musicales.
+                  </Text>
+                  <Button
+                    component="a"
+                    href={portfolioLinks.suno}
+                    target="_blank"
+                    rel="noreferrer"
+                    variant="light"
+                    size="xs"
+                    radius="xl"
+                    color="orange"
+                    rightSection={<IconArrowUpRight size={14} />}
+                  >
+                    Visitar Perfil
+                  </Button>
+                </Stack>
+              </Group>
+            </Paper>
           </Stack>
         </GridCol>
         <GridCol span={{ base: 12, md: 8 }}>
