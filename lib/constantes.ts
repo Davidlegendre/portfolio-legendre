@@ -12,7 +12,7 @@ export const portfolioLinks = {
   github: "https://github.com/Davidlegendre",
   linkedin: "https://www.linkedin.com/in/legendre-david",
   cv: "https://drive.google.com/file/d/1ehtFYRuiuieZqJiUdUg5FK-KyubUpSEs/view?usp=sharing",
-  suno: "https://suno.com/@pluralisticsymphony230"
+  suno: "https://suno.com/@dfla_music"
 } as const;
 
 // Recursos externos compartidos por el layout global.
